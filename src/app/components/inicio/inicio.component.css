@@ -1,0 +1,47 @@
+.backg-item {
+    background-color: #ffffff;
+    height: 180px;
+    border-radius: 25px;
+    margin: 5px;
+}
+
+.genre {
+    font-size: 80px;
+}
+
+.num-style {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.cm {
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 3px;
+}
+
+.form-range {
+    padding: 0px 24px;
+}
+
+input[type=range]::-webkit-slider-thumb  {
+    background: #a04af0;
+}
+
+.minus-plus {
+    cursor: pointer;
+    background-color: #9638ee;
+    color: white;
+    padding: 9px;
+    border-radius: 25px;
+    margin: 3px;
+}
+
+.genre-disabled {
+    opacity: 0.5;
+}
+
+.text-parag {
+    font-size: 22px;
+    font-weight: 500;
+}

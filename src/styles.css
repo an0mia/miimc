@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background: #ec008c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+row {
+    margin-top: 20px;
+}
+
+.titulo {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+}
+
+.btn {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.btn-color {
+    background-color: #a04af0;
+    border-color: #a04af0;
+    border-radius: 25px;
+    width: 100%;
+    margin-top: 5px;
+    height: 48px;
+}
+
+.btn-color:hover {
+    background-color: #983bee;
+    border-color: #9638ee;
+}
+
+.btn-color:enabled {
+    background-color: #a04af0;
+    border-color: #a04af0;
+}
+
+.cont-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}

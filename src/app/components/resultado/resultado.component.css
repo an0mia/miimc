@@ -1,0 +1,25 @@
+.backg-item {
+    background-color: #ffffff;
+    height: 480px;
+    border-radius: 25px;
+    margin: 5px;
+}
+
+.result {
+    color: green;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.num-style {
+    font-size: 80px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 45px;
+}
+
+.description {
+    margin: 10px;
+    font-size: 18px;
+    text-align: center;
+}

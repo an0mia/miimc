@@ -1,0 +1,73 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 offset-lg-4">
+            <h1 class="titulo">Calculadora IMC</h1>
+            <div class="row">
+                <div class="col-md-6">
+                        <div class="backg-item" [ngClass]="{'genre-disabled': genero === 'Femenino'}">
+                            <div class="cont-flex" style="cursor: pointer;" (click)="masculino()">
+                                <i class="fa-solid fa-mars genre"></i>
+                                <p>Masculino</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-md-6">
+                        <div class="backg-item" [ngClass]="{'genre-disabled': genero === 'Masculino'}">
+                            <div class="cont-flex" style="cursor: pointer;" (click)="femenino()">
+                                <i class="fa-solid fa-venus genre"></i>
+                                <p>Femenino</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="backg-item">
+                        <div class="cont-flex">
+                            <p class="text-parag" >Altura</p>
+                            <input (input)="cambiarAltura($event)" [value]="altura" min="120" max="220" type="range" class="form-range">
+                            <div class="num-style">{{ altura }}<span class="cm">cm</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="backg-item">
+                        <div class="cont-flex">
+                            <p class="text-parag">Peso</p>
+                            <div class="num-style" style="margin-top: -20px;">
+                                {{ peso }}
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-minus minus-plus" (click)="peso = peso - 1"></i>
+                                <i class="fa-solid fa-plus minus-plus" (click)="peso = peso +1"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="backg-item">
+                        <div class="cont-flex">
+                            <p class="text-parag">Edad</p>
+                            <div class="num-style" style="margin-top: -20px;">
+                                {{ edad }}
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-minus minus-plus" (click)="edad = edad - 1"></i>
+                                <i class="fa-solid fa-plus minus-plus" (click)="edad =  edad + 1"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button (click)="calcularIMC()" class="btn btn-primary btn-lg-12 btn-block btn-color">
+                        Calcular
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
